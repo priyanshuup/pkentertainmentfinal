@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#rentalsmain{
+    width: 100%;
+    background-color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+#main .headingRentals h2{
+    font-size: 4rem;
+  
+}
+
+.rentalssubmaindiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pkEntertainMentRentalSubDiv{
+    position: relative;
+    height: 300px;
+    margin-top: 50vh;
+    background-color: rgb(236, 230, 230);
+    border: 2px solid black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+.pkEntertainmentImageDiv{
+    height: 220px;
+    width:220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pkEntertainmentImageDiv img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover;
+    object-position: center; */
+}

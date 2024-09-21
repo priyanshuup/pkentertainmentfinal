@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="https://i.postimg.cc/yYd5g7Jz/PK-Entertainment-Logo.png" alt="PK Entertainment Logo">
+        </figure>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+
+                <li>
+                    <a href="#about">DJ</a>
+                    <ul class="submenu">
+                        <li><a href="#DJ-packages">Packages</a></li>
+                        <li><a href="#DJ-floors">Floors</a></li>
+                        <li><a href="#DJ-floors">Screen</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#wedding">Wedding</a>
+                    <ul class="submenu">
+                        <li><a href="./wedding.html">Pre-Wedding Shoots</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#services">Portfolio
+                        <ul class="submenu">
+                            <li><a href="./WeddingPortfolio.html">Wedding</a></li>
+                            <li><a href="./EventsPortfolio.html">Events</a></li>
+                            <li><a href="./MusicPortfolio.html">Music</a></li>
+                            <li><a href="./PromoPortfolio.html">Promo</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#entertainment">Entertainment</a>
+                    <ul class="submenu">
+                        <li><a href="#">Dhol</a></li>
+                        <li><a href="#">Bhangra</a></li>
+                        <li><a href="#">Saxophone</a></li>
+                        <li><a href="#">Live Band</a></li>
+                        <li><a href="#">Belly Dance</a></li>
+                        <li><a href="#">Bollywood Dance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#specialeffects">Special Effects</a>
+                    <ul class="submenu">
+                        <li><a href="#">Smoke Machine</a></li>
+                        <li><a href="#">Confettie</a></li>
+                        <li><a href="#">Sparker</a></li>
+                        <li><a href="#">CO2 Gun & CO2 Jet </a></li>
+                        <li><a href="#">Baloon Effect</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Rentals.html">Rentals</a>
+                </li>
+
+                <li><a href="#aboutus">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+    <div id="main">
+        <section id="contactForm">
+            <div class="contact-container-left">
+                <form action="https://api.web3forms.com/submit" method="post">
+
+                    <div class="contact-left-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="eb66e195-cc46-4766-8ca4-6f0f3b30ae9a">
+                    <input type="text" name="name" placeholder="Your Name"  required>
+                    <select name="eventType" required>
+                        <option value="conference">Wedding</option>
+                        <option value="seminar">Birthday</option>
+                        <option value="workshop">Event</option>
+                        <option value="meeting">Other</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <input type="text" name="name" placeholder="Location" required>
+                    <input type="email" name="email" placeholder="Email"  required>
+                    <input type="number" name="name" placeholder="Contact Number"  required>
+                    <textarea name="message" placeholder="Message"required></textarea>
+                    <input type="hidden" name="redirect" value="/">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-container-right">
+                <img src="https://images.pexels.com/photos/8412395/pexels-photo-8412395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+        </section>
+    </div>
+    <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the form element
+            const contactForm = document.getElementById('contactForm');
+
+            // Add submit event listener
+            contactForm.addEventListener('submit', function (event) {
+                
+                alert('Thank you for submitting the form!');
+
+        
+            });
+        });
+    </script>
+</body>
+</html>
