@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const burgerMenu = document.querySelector('.hamburger');
     const navList = document.querySelector('.nav-list');
-    
+
     // Initialize flag outside the click event listener
     var flag = 1;
 
@@ -24,4 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //     navList.classList.remove('show');
     //     burgerMenu.classList.remove('open');
     // });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../navbar.html") // Adjust path if needed
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading the navbar:", error));
 });

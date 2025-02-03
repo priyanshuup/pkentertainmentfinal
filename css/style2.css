@@ -330,9 +330,9 @@ header nav .hamburger{
     background-color: #fff;
 }
 figure {
-    height: 50px;
+    height: 40px;
     /* margin-left: 55px; */
-    width: 50px;
+    width: 40px;
     color: white;
     font-size: 1.5em;
     z-index: 9999;
@@ -364,7 +364,7 @@ header ul li a{
   font-family: "FSP DEMO - Dashiell Fine";
   font-weight: 100;
 
-    font-size: 25px;
+    font-size: 18px;
 }
 
 header ul li a:hover{
@@ -1315,30 +1315,43 @@ iframe {
 
   
 
-#rentalsmain{
-  min-height: 100vh;
+#rentalsmain, #maincontentbox{
+  position: relative;
+  top: 10vh;
+  min-height: 90vh;
   width: 100%;
   background-color:#e9e9e9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
   padding: 20px;
 }
 
 .rentalssubmaindiv{
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:nowrap;
+}
+.rentalssubmaindivcontent{
+  width: 100%;
   margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: "MenoBanner";
+
 }
 
 .pkEntertainMentRentalSubDiv{
   position: relative;
-  height: 300px;
+  height: 210px;
   /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* border: 2px solid black; */
@@ -1347,18 +1360,19 @@ iframe {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 20px;
-  margin: 20px;
+  padding: 0 10px;
+  margin: 15px 10px;
   cursor: pointer;
+  font-family: "MenoBanner";
 
 }
 
 .pkEntertainMentRentalSubDiv h3{
-  margin: 20px;
+  margin: 10px;
 }
 .pkEntertainmentImageDiv{
-  height: 200px;
-  width:220px;
+  height: 130px;
+  width:160px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1370,6 +1384,15 @@ iframe {
   width: 100%;
   /* object-fit: cover;
   object-position: center; */
+}
+
+.pkEntertainMentRentalSubDiv .hovertext{
+  color: gray;
+  opacity: 0;
+}
+
+.pkEntertainMentRentalSubDiv:hover .hovertext{
+    opacity: 1;
 }
 
 /* Contact page starts here  */
@@ -1540,3 +1563,80 @@ button[type="submit"]:hover {
   opacity: 1;
   }
   
+
+  /* Sounds poge starts here */
+
+  #maincontentbox{
+  flex-direction: column;
+  }
+  #main #maincontentbox h1{
+    font-size: 18px;
+  }
+
+  .imageAndContent{
+    width: 100%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e9e9e9;
+    font-weight: 200;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .imageAndContent:nth-child(odd){
+    background-color: #f9f8f6;
+  }
+
+
+  .imageAndContent h2{
+    font-family: "MenoBanner";
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+  }
+  .imageAndContent h4{
+    font-family:serif;
+    font-weight: 200;
+  }
+
+  .contentImageAndName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px 10px;
+  }
+
+  .contentImageAndName h3{
+    font-family: "sans-serif";
+    font-weight: 400;
+  }
+
+
+
+  .contentImage{
+    /* height: 230px; */
+    width: 200px;
+  }
+
+  .contentImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .contentDetails{
+    width: 65%;
+    color: black;
+  }
+
+  .contentDetails h2{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "FSP DEMO - Dashiell Fine";
+  }

@@ -334,3 +334,5 @@ function showLoader() {
     closebooking.addEventListener("click", () => {
       form.classList.remove("active");
     });
+
+  
