@@ -1339,14 +1339,18 @@ iframe {
   flex-wrap:nowrap;
 }
 .rentalssubmaindivcontent{
-  width: 100%;
+  width: 90%;
   margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   font-family: "MenoBanner";
+}
 
+.rentalssubmaindivcontent h4{
+  font-family:serif;
+  font-weight: 200;
 }
 
 .pkEntertainMentRentalSubDiv{
@@ -1354,7 +1358,7 @@ iframe {
   height: 210px;
   /* background-color: #fff; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* border: 2px solid black; */
+  border: 1px solid black;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1595,9 +1599,15 @@ button[type="submit"]:hover {
     font-family: "MenoBanner";
     font-weight: 600;
     border-bottom: 1px solid gray;
+    display: inline-block;
     margin-bottom: 10px;
   }
   .imageAndContent h4{
+    font-family:serif;
+    font-weight: 200;
+  }
+
+  .imageAndContent p{
     font-family:serif;
     font-weight: 200;
   }
@@ -1621,6 +1631,8 @@ button[type="submit"]:hover {
   .contentImage{
     /* height: 230px; */
     width: 200px;
+    border: 1px solid black;
+    padding: 10px;
   }
 
   .contentImage img{
